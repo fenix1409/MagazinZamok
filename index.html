@@ -3,20 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="Site Icon Link"> -->
+    <link rel="icon" href="./images/Logo.svg">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Site Title</title>
+    <title>Magazin Zamok</title>
 </head>
 <body>
     <header class="site-header">
+        <div class="header__top-wrapper top">
+            <p class="top__text">Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+            <span class="top__span">Обратный звонок</span>
+        </div>
         <div class="container">
-            <div class="header"></div>
+            <div class="header">
+                <div class="header__bottom-wrapper bottom">
+                    <div class="bottom__wrapper">
+                        <a class="bottom__logo-link" href="/">
+                            <img src="./images/Logo.svg" alt="Logo img" width="50" height="42">
+                        </a>
+                        <ul class="bottom__list">
+                            <li class="bottom__item">
+                                <a class="bottom__link" href="#">Главная</a>
+                            </li>
+                            <li class="bottom__itme">
+                                <a class="bottom__link" href="#">Каталог</a>
+                            </li>
+                            <li class="bottom__itme">
+                                <a class="bottom__link" href="#">Оптовая продажа</a>
+                            </li>
+                            <li class="bottom__itme">
+                                <a class="bottom__link" href="#">О нас</a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="bottom__phone-wrapper">
+                        <a class="bottom__phone-logo-link" href="tel:+79665588499">
+                            <img src="./images/phone-call.svg" alt="phone logo" width="20" height="20">
+                            <span class="bottom__phone-link">+7 (966) 55 88 499</span>
+                        </a>
+                        <a class="bottom__frame" href="#">
+                            <img src="./images/Frame.svg" alt="frame img" width="32" height="32">
+                        </a>
+                        <a class="bottom__frame-link" href="#">
+                            <img src="./images/2.svg" alt="frame img" width="32" height="32">
+                        </a>   
+                    </div>
+                    <button class="header__menu-btn">
+                        <img src="./images/menu-btn.svg" alt="menu img" width="24" height="24">
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
     <main class="site-main">
         <section class="hero-section">
             <div class="container">
-                <div class="hero"></div>
+                <div class="hero">
+                    <img class="hero__img" src="./images/zamokimg.png" alt="zamok img">
+                    <div class="hero__content-wrapper">
+                        <h1 class="hero__title">Golden Soft GS-200Z-5 для офиса</h1>
+                        <p class="hero__text">Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый блеск, четкие линии, красивые формы.</p>
+                        <p class="hero__subtext">Подходит для установки на деревянную/межкомнатную дверь.</p>
+                        <span class="hero__span">Цена</span>
+                        <div class="hero__price-wrapper">
+                            <strong class="hero__price">33 000₽</strong>
+                            <strong class="hero__price2"> 
+                                <del>37 000₽</del> 
+                            </strong>
+                        </div>
+                        <a class="hero__btn" href="#">Добавить в корзину</a>
+                    </div>
+                </div>
+                <div class="hero__scroll-wrapper">
+                    <img class="hero__scroll-img" src="./images/heroscroll.svg" alt="hero img scroll" width="180" height="32">
+                </div>
+            </div>
+        </section>
+        <section class="information-section">
+            <div class="container">
+                <div class="information">
+                    <ul class="information__list">
+                        <li class="information__item">
+                            <h2 class="information__title">5,567</h2>
+                            <p class="information__text">Счастливых клиентов</p>
+                        </li>
+                        <li class="information__item">
+                            <h2 class="information__title">1245</h2>
+                            <p class="information__text">Продуктов на выбор</p>
+                        </li>
+                        <li class="information__item">
+                            <h2 class="information__title">372</h2>
+                            <p class="information__text">Продаж в день</p>
+                        </li>
+                        <li class="information__item">
+                            <h2 class="information__title">20</h2>
+                            <p class="information__text">Лет на рынке</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="container">
+                <div class="service">
+                    <h2 class="service__title">Почему GoldenService?</h2>
+                    <ul class="service__list">
+                        <li class="service__item">
+                            <img class="service__img" src="./images/serviceico1.svg" alt="icon" width="76" height="70">
+                            <p class="service__text">Возврат удвоенной стоимости каждого замка в случае брака.</p>
+                        </li>
+                        <li class="service__item">
+                            <img class="service__img" src="./images/thumbico.svg" alt="icon" width="76" height="70">
+                            <p class="service__text">Наносим ваш логотип компании на наш продукт</p>
+                        </li>
+                        <li class="service__item">
+                            <img class="service__img" src="./images/Group.svg" alt="icon" width="76" height="70">
+                            <p class="service__text">Возврат удвоенной стоимости каждого замка в случае брака.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

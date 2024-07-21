@@ -1,4 +1,82 @@
 .site-header {
+    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;  
 }
-.header {
+.header__top-wrapper{
+    background-color: #454F5B;
+    @include  Display($items:center, $space:center, $gap:197px);
+    padding: 9px 0;
+}
+.top__text {
+    @include  textStyle($MB:0px, $FS:16px, $FW:500, $CLR:$white-clr, $LH:26px, $CASE:inherit);
+}
+.top__span {
+    @include  textStyle($MB:0px, $FS:16px, $FW:500, $CLR:$white-clr, $LH:26px, $CASE:inherit);
+    border-bottom: 1px solid white;
+}
+.header__bottom-wrapper {
+    padding: 20px 0;
+    @include  Display($items:center, $space:center, $gap:283px); 
+}
+.bottom__wrapper{
+    @include  Display($items:center, $space:center, $gap:101px);    
+}
+.bottom__logo-link {
+    display: inline-block;
+}
+.bottom__list {
+@include Display($items:center, $space:center, $gap:32px);
+}
+.bottom__link {
+    @include  textStyle($MB:0px, $FS:20px, $FW:300, $CLR:$black-clr, $LH:23px, $CASE:inherit);
+}
+.bottom__phone-wrapper {
+    @include Display($items:center, $space:start, $gap:30px);
+}
+.bottom__phone-logo-link {
+    display: inline-block;
+}
+.bottom__phone-link {
+    @include  textStyle($MB:0px, $FS:18px, $FW:400, $CLR:$black-clr, $LH:21px, $CASE:inherit);
+}
+.header__menu-btn{
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
+
+@media (max-width:460px){
+    .top__span{
+        display: none;
+    }
+    .top__text {
+        @include  textStyle($MB:0px, $FS:12px, $FW:500, $CLR:$white-clr, $LH:12px, $CASE:inherit);
+        text-align: center;
+    }
+    .header__top-wrapper{
+        padding: 12px 23px;
+    }
+    .header__bottom-wrapper{
+        padding: 19px 0;
+        flex-direction: row-reverse;
+        @include Display($items:center, $space:space-between, $gap:0px);
+    }
+    .bottom__wrapper{
+        display: none;    
+    }
+    .bottom__logo-link{
+        display: none;
+    }
+    .bottom__list{
+        display: none;
+    }
+    .bottom__phone-wrapper {
+        @include Display($items:center, $space:start, $gap:16px);
+    }
+    .bottom__phone-logo-link{
+        display: none;
+    }
+    .header__menu-btn{
+        display: block;
+    }
 }
