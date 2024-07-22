@@ -1,0 +1,39 @@
+.category-section {
+    padding-bottom: 100px;
+}
+.category__title {
+    @include  textStyle($MB:64px, $FS:44px, $FW:600, $CLR:$black-clr, $LH:62px, $CASE:inherit);
+    text-align: center;
+}
+.category__list {
+    width: 1240px;
+    @include  Display($items:center, $space:center, $gap:40px);
+    flex-wrap: wrap;
+}
+.category__item {
+    width: 600px;
+    padding: 40px;
+    @include  Display($items:center, $space:center, $gap:20px);
+    background: #00000005;
+}
+.category__content-wrapper {
+    width: 220px;
+margin-top: 330px;
+}
+.category__subtitle {
+    @include  textStyle($MB:12px, $FS:22px, $FW:500, $CLR:$black-clr, $LH:34px, $CASE:inherit);
+}
+.category__link {
+    display: inline-block;
+    text-align: center;
+    @include buttonStyle($BTN_W:220px, $BTN_PY:12px, $BTN_BG_CLR:transparent,$BTN_BR_Radius:3px, $BTN_Border_CLR:#454F5B,$BTN_FS:16px,$BTN_FW:500, $BTN_LH:26px, $BTN_CLR:$black-clr,$BTN_CASE:inherit);
+}
+.category__img {
+}
+.category__btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    @include buttonStyle($BTN_W:220px, $BTN_PY:12px, $BTN_BG_CLR:#4295E4,$BTN_BR_Radius:0, $BTN_Border_CLR:none,$BTN_FS:16px,$BTN_FW:500, $BTN_LH:26px, $BTN_CLR:$white-clr,$BTN_CASE:inherit);
+}
